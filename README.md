@@ -25,7 +25,8 @@ SkillMantra is a full-stack online learning platform that allows students to bro
 ### Frontend
 - React.js
 - Redux (State Management)
-- Tailwind CSS
+- Tailwind CS
+- Shadcn ui
 
 ### Backend
 - Node.js
