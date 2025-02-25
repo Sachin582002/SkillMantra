@@ -1,6 +1,6 @@
 # SkillMantra - An Online Learning Platform
 
-SkillMantra is a full-stack online learning platform that allows students to browse, enroll in courses, and filter courses by category. Instructors can create, manage, and delete courses. The platform features authentication, authorization, and an integrated Esewa payment gateway.
+SkillMantra is a full-stack online learning platform that allows students to browse, enroll in courses, and filter courses by category. Instructors can create, manage, and delete courses. The platform features authentication, authorization, and an integrated stripe payment gateway.
 
 ## Features
 
@@ -18,7 +18,7 @@ SkillMantra is a full-stack online learning platform that allows students to bro
 - Manage course content and structure.
 
 ### Payment Integration
-- Secure payments using Esewa payment gateway.
+- Secure payments using stripe payment gateway.
 
 ## Tech Stack
 
@@ -35,7 +35,7 @@ SkillMantra is a full-stack online learning platform that allows students to bro
 
 ### Other Tools
 - Cloudinary for course media uploads.
-- Esewa for payments.
+- Stripe for payments.
 - Git & GitHub for version control.
 
 ## Installation & Setup
@@ -70,6 +70,14 @@ Create a `.env` file in the backend directory with the following variables:
 ```env
 MONGO_URI=your_mongodb_connection_string
 JWT_SECRET=your_jwt_secret
+SECRET_KEY=
+API_KEY=
+API_SECRET=
+CLOUD_NAME=
+STRIPE_SECRET_KEY=
+STRIPE_PUBLISHABLE_KEY=
+WEBHOOK_ENDPOINT_SECRET=
+FRONTEND_URL=
 ```
 
 ## Contribution
