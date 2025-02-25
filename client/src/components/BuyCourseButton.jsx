@@ -17,7 +17,7 @@ const BuyCourseButton = ({ courseId }) => {
        if(data?.url){
         window.location.href = data.url; // Redirect to stripe checkout url
        }else{
-        toast.error("Invalid response from server.")
+        toast.error("Invalid response from server")
        }
     } 
     if(isError){
