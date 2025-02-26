@@ -82,9 +82,6 @@ const AddCourse = () => {
                 <SelectItem value="Fullstack Development">
                   Fullstack Development
                 </SelectItem>
-                <SelectItem value="MERN Stack Development">
-                  MERN Stack Development
-                </SelectItem>
                 <SelectItem value="Javascript">Javascript</SelectItem>
                 <SelectItem value="Python">Python</SelectItem>
               </SelectGroup>
