@@ -1,4 +1,4 @@
-import { Menu, School } from "lucide-react";
+import { GraduationCap, Menu } from "lucide-react";
 import React, { useEffect } from "react";
 import {
   DropdownMenu,
@@ -47,10 +47,10 @@ const Navbar = () => {
       {/* Desktop */}
       <div className="max-w-7xl mx-auto hidden md:flex justify-between items-center gap-10 h-full">
         <div className="flex items-center gap-2">
-          <School size={"30"} />
+        <GraduationCap size={"40"} />
           <Link to="/">
-            <h1 className="hidden md:block font-extrabold text-2xl">
-            SkillMantra
+            <h1 className="hidden md:block font-extrabold text-2xl text-blue-500">
+            Skill<span className="text-green-500">Mantra</span>
             </h1>
           </Link>
         </div>
@@ -103,7 +103,7 @@ const Navbar = () => {
       </div>
       {/* Mobile device  */}
       <div className="flex md:hidden items-center justify-between px-4 h-full">
-        <h1 className="font-extrabold text-2xl">SkillMantra</h1>
+        <h1 className="font-extrabold text-2xl text-blue-500">Skill<span className="text-green-500">Mantra</span></h1>
         <MobileNavbar user={user}/>
       </div>
     </div>
@@ -128,7 +128,7 @@ const MobileNavbar = ({user}) => {
       </SheetTrigger>
       <SheetContent className="flex flex-col">
         <SheetHeader className="flex flex-row items-center justify-between mt-2">
-          <SheetTitle> <Link to="/">SkillMantra</Link></SheetTitle>
+          <SheetTitle> <Link to="/">Skill<span className="text-green-500">Mantra</span></Link></SheetTitle>
           <DarkMode />
         </SheetHeader>
         <Separator className="mr-2" />
